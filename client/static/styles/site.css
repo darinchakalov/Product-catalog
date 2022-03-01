@@ -1,0 +1,32 @@
+* {
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+body {
+	/* background: rgb(251, 223, 251);
+	background: linear-gradient(
+		156deg,
+		rgba(251, 223, 251, 1) 0%,
+		rgba(104, 112, 200, 1) 50%,
+		rgba(216, 219, 255, 1) 100%
+	); */
+	background: rgb(196, 144, 237);
+	background: linear-gradient(87deg, rgba(196, 144, 237, 1) 0%, rgba(105, 160, 224, 1) 100%);
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.container {
+	background-color: rgb(25, 26, 33);
+	width: 80vw;
+	margin: 5% auto;
+	border-radius: 20px;
+}
+
+.separator {
+	background-color: rgb(138, 139, 142);
+	width: 100%;
+	height: 1px;
+}

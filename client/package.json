@@ -1,0 +1,16 @@
+{
+	"name": "siteground-task",
+	"version": "1.0.0",
+	"description": "front-end created with lit-html and page router",
+	"main": "app.js",
+	"scripts": {
+		"start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1"
+	},
+	"author": "Darin Chakalov",
+	"license": "ISC",
+	"dependencies": {
+		"http-server": "^14.1.0",
+		"lit-html": "^2.2.0",
+		"page": "^1.11.6"
+	}
+}

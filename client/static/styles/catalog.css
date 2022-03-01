@@ -1,0 +1,106 @@
+main {
+	padding: 5rem;
+}
+
+.product-view-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-view-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: 1;
+}
+
+.product-view-list .product {
+	flex: 1;
+	width: 80%;
+	flex-wrap: 1;
+}
+
+.product {
+	display: flex;
+	border-radius: 20px;
+	border: 1px solid rgb(138, 139, 142);
+	padding: 1rem;
+	gap: 2rem;
+}
+
+.product div {
+	flex-wrap: wrap;
+}
+
+.product:hover {
+	transform: scale(1.02);
+}
+
+.image-container img {
+	max-width: 10rem;
+	border-radius: 20px;
+}
+
+.info-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.product-info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.buttons-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.button {
+	flex: 1;
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 0.5rem;
+	border-style: none;
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+.button a {
+	color: black;
+	margin: auto;
+}
+
+.button a:hover {
+	color: white;
+}
+
+.button:hover {
+	color: white;
+	background: rgb(196, 144, 237);
+	background: linear-gradient(87deg, rgba(196, 144, 237, 1) 0%, rgba(105, 160, 224, 1) 100%);
+}
+
+/* .button:first-child::before {
+	content: "\1F58A  ";
+	font-weight: 700;
+	font-size: 1rem;
+}
+.button:last-child::before {
+	content: "\01F5D1  ";
+	font-weight: 700;
+	font-size: 1rem;
+} */
