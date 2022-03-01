@@ -1,0 +1,44 @@
+[
+	{
+		"_id": 1,
+		"name": "TV",
+		"price": 1000,
+		"currency": "USD"
+	},
+	{
+		"_id": 2,
+		"name": "SSD",
+		"price": 100,
+		"currency": "USD"
+	},
+	{
+		"_id": 3,
+		"name": "Motherboard",
+		"price": 250,
+		"currency": "EUR"
+	},
+	{
+		"_id": 4,
+		"name": "Graphics Card",
+		"price": 500,
+		"currency": "EUR"
+	},
+	{
+		"_id": 5,
+		"name": "Office Chair",
+		"price": 100,
+		"currency": "BGN"
+	},
+	{
+		"_id": 6,
+		"name": "Office Desk",
+		"price": 180,
+		"currency": "BGN"
+	},
+	{
+		"_id": 7,
+		"name": "test",
+		"price": 112380,
+		"currency": "BGN"
+	}
+]
