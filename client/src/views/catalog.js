@@ -8,7 +8,7 @@ export const catalogTemplate = (products) => html` <div id="products-container" 
 	${products.map(productTemplate)}
 </div>`;
 
-export async function catalogPage(context) {
+export async function renderCatalogPage(context) {
 	let products = await dataServices.getAllProducts();
 	render(catalogTemplate(products), rootElement);
 }

@@ -1,4 +1,6 @@
 import { html } from "../../../node_modules/lit-html/lit-html.js";
+import productServices from "../../services/productServices.js";
+import page from "../../../node_modules/page/page.mjs";
 
 export const productTemplate = (product) => html`<div class="product">
 	<div class="image-container">
@@ -11,9 +13,19 @@ export const productTemplate = (product) => html`<div class="product">
 		</div>
 		<div class="buttons-wrapper">
 			<a class="button edit" href=${`/edit/${product._id}`}>Edit</a>
-			<a class="button delete" href=${`/delete/${product._id}`}>Delete</a>
+			<a id=${product._id} @click=${onDelete} class="button delete" href="javascript:void(0)">Delete</a>
 		</div>
 	</div>
 </div>`;
 
-
+async function onDelete(e) {
+	const confirmed = confirm("Are you sure you want to delete this item?");
+	if (confirmed) {
+		try {
+			await productServices.deleteProduct(e.target.id);
+			page.redirect("/");
+		} catch (error) {
+			alert(error);
+		}
+	}
+}

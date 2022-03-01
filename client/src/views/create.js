@@ -1,5 +1,6 @@
 import { html, render } from "../../node_modules/lit-html/lit-html.js";
 import productServices from "../services/productServices.js";
+import page from "../../node_modules/page/page.mjs";
 
 const rootElement = document.querySelector(".root");
 
@@ -13,14 +14,19 @@ const createTemplate = (onSubmit) => html`<div class="form-container">
 	</form>
 </div>`;
 
-export function createPage() {
+export function renderCreatePage() {
 	async function onSubmit(event) {
 		event.preventDefault();
 		let productData = Object.fromEntries(new FormData(event.target));
 		if (!productData.name || !productData.price || !productData.currency) {
 			return alert("All fields are mandatory");
 		}
-		await productServices.createProduct(productData);
+		try {
+			await productServices.createProduct(productData);
+			page.redirect("/");
+		} catch (error) {
+			alert(error);
+		}
 	}
 	render(createTemplate(onSubmit), rootElement);
 }

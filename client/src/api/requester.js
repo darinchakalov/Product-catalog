@@ -14,7 +14,7 @@ async function request(uri, options) {
 	}
 }
 
-function createOptions(method, data) {
+function createOptions(method = "GET", data) {
 	const options = {
 		method,
 		headers: {},
@@ -29,11 +29,15 @@ function createOptions(method, data) {
 }
 
 export async function get(url) {
-	return request(url, createOptions("GET"));
+	return await request(url, createOptions());
 }
 
 export async function post(url, data) {
-	return request(url, createOptions("POST", data));
+	return await request(url, createOptions("POST", data));
+}
+
+export async function del(url) {
+	return await request(url, createOptions("DELETE"));
 }
 
 //TODO Create rest of the CRUD operations
