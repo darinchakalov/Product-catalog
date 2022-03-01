@@ -30,11 +30,21 @@ const create = function (newProduct) {
 	return fsPromise.writeFile(path.resolve(__dirname, "../data/products.json"), result);
 };
 
+const edit = function (id, productData) {
+	let current = products.find((x) => x._id == id);
+	productData._id = current._id;
+	products.splice(products.indexOf(current), 1);
+	products.push(productData);
+	let result = JSON.stringify(products, "", 2);
+	return fsPromise.writeFile(path.resolve(__dirname, "../data/products.json"), result);
+};
+
 const productServices = {
 	getAll,
 	create,
 	deleteOne,
 	getOne,
+	edit,
 };
 
 module.exports = productServices;

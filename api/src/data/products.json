@@ -1,38 +1,20 @@
 [
   {
-    "_id": 2,
-    "name": "SSD",
-    "price": 100,
-    "currency": "USD"
-  },
-  {
-    "_id": 3,
-    "name": "Motherboard",
-    "price": 250,
-    "currency": "EUR"
-  },
-  {
-    "_id": 5,
-    "name": "Office Chair",
-    "price": 100,
-    "currency": "BGN"
-  },
-  {
-    "name": "Darin Chakalov",
+    "name": "New Cube",
     "price": 40000,
     "currency": "BGN",
-    "_id": "e406ceb6-97a1-4365-94c6-d5fabc72d3c5"
+    "_id": "e29eafcb-dfb0-491e-be5b-1a0cf8bbcc71"
   },
   {
-    "name": "Darin Chakalov",
-    "price": 40000,
+    "name": "Test12",
+    "price": "20",
     "currency": "BGN",
-    "_id": "84cfd6d3-45cc-495d-aa2c-3ec4e0e311bf"
+    "_id": "ef6d3880-de55-4223-a651-fca8507b836e"
   },
   {
-    "name": "Test cat",
-    "price": 20,
-    "currency": "BGN",
-    "_id": "3c773cca-0c8c-4c59-82e3-c96e8b8b86f3"
+    "name": "Desk",
+    "price": 200,
+    "currency": "USD",
+    "_id": "9caf3511-f275-4bc7-b824-0b918ed0a07a"
   }
 ]

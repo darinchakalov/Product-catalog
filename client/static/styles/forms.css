@@ -23,6 +23,10 @@
 	color: black;
 }
 
+.form-container form label {
+	align-self: center;
+}
+
 .form-container form button {
 	text-align: center;
 	align-self: center;

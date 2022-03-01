@@ -32,7 +32,7 @@ export async function renderEditPage(context) {
 			return alert("All fields are mandatory");
 		}
 		try {
-			await productServices.createProduct(productData);
+			await productServices.editProduct(context.params.id, productData);
 			page.redirect("/");
 		} catch (error) {
 			alert(error);

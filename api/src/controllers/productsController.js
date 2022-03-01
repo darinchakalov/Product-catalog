@@ -31,10 +31,21 @@ const getSingleProduct = (req, res) => {
 };
 
 const deleteProduct = (req, res) => {
-	let result = productServices
+	productServices
 		.deleteOne(req.params.id)
 		.then((response) => {
-			res.json({ message: "Product was delete succesfully" });
+			res.json({ message: "Product deleted succesfully" });
+		})
+		.catch((err) => {
+			res.status(500).json({ message: err });
+		});
+};
+
+const editProduct = (req, res) => {
+	productServices
+		.edit(req.params.id, req.body)
+		.then((response) => {
+			res.status(200).json({ message: "Product edited succesfully" });
 		})
 		.catch((err) => {
 			res.status(500).json({ message: err });
@@ -45,5 +56,6 @@ router.get("/data/products", getProducts);
 router.post("/data/products", createProduct);
 router.get("/data/products/:id", getSingleProduct);
 router.delete("/data/products/:id", deleteProduct);
+router.put("/data/products/:id", editProduct);
 
 module.exports = router;

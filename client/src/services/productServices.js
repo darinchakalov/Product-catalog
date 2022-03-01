@@ -1,4 +1,4 @@
-import { get, post, del } from "../api/requester.js";
+import { get, post, del, put } from "../api/requester.js";
 
 async function getAllProducts() {
 	return await get("/data/products");
@@ -16,9 +16,14 @@ async function deleteProduct(id) {
 	return await del("/data/products/" + id);
 }
 
+async function editProduct(id, data) {
+	return await put("/data/products/" + id, data);
+}
+
 export default {
 	getAllProducts,
 	getSingleProduct,
 	createProduct,
 	deleteProduct,
+	editProduct,
 };

@@ -40,4 +40,6 @@ export async function del(url) {
 	return await request(url, createOptions("DELETE"));
 }
 
-//TODO Create rest of the CRUD operations
+export async function put(url, data) {
+	return await request(url, createOptions("PUT", data));
+}
