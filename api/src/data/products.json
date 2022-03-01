@@ -40,5 +40,21 @@
 		"name": "test",
 		"price": 112380,
 		"currency": "BGN"
+	},
+	{
+		"name": "Darin Chakalov",
+		"price": "20",
+		"currency": "BGN"
+	},
+	{
+		"name": "Test",
+		"price": "40000",
+		"currency": "BGN"
+	},
+	{
+		"name": "Test",
+		"price": "40000",
+		"currency": "BGN",
+		"_id": "218e7d2e-6bbb-4ba7-9f32-b7460626089a"
 	}
 ]
