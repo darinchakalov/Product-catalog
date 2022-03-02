@@ -6,28 +6,10 @@
     "_id": "e29eafcb-dfb0-491e-be5b-1a0cf8bbcc71"
   },
   {
-    "name": "Desk",
-    "price": 200,
-    "currency": "USD",
-    "_id": "9caf3511-f275-4bc7-b824-0b918ed0a07a"
-  },
-  {
     "name": "Darin Chakalov",
     "price": 20,
     "currency": "BGN",
     "_id": "0f2f419e-2266-4717-8ec9-355c6e96d0a3"
-  },
-  {
-    "name": "Darin Chakalov",
-    "price": 20,
-    "currency": "USD",
-    "_id": "a9efeebc-0f25-4837-9c73-bb0eafa30bbe"
-  },
-  {
-    "name": "Darin Chakalov",
-    "price": 20,
-    "currency": "BGN",
-    "_id": "4cecff78-4c3c-46ea-94f9-bf24db2c6f4a"
   },
   {
     "name": "Test cat",
@@ -42,9 +24,27 @@
     "_id": "1c71bc72-50b4-496a-b567-48f309111351"
   },
   {
+    "name": "Darin Chakalov",
+    "price": "201",
+    "currency": "USD",
+    "_id": "a9efeebc-0f25-4837-9c73-bb0eafa30bbe"
+  },
+  {
     "name": "New Cube",
-    "price": 18500,
+    "price": "1850",
     "currency": "EUR",
     "_id": "cfcd1334-2069-4454-9de2-9757eef917c1"
+  },
+  {
+    "name": "Darin Chakalov",
+    "price": "201",
+    "currency": "BGN",
+    "_id": "4cecff78-4c3c-46ea-94f9-bf24db2c6f4a"
+  },
+  {
+    "name": "Desk",
+    "price": 220,
+    "currency": "BGN",
+    "_id": "1abbf50c-ecc0-47a1-b01c-efa737b23275"
   }
 ]

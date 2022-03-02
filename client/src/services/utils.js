@@ -32,7 +32,6 @@ export function changeActiveView() {
 	let navButtons = document.querySelectorAll("nav ul li a");
 	navButtons.forEach((btn) => {
 		btn.addEventListener("click", (e) => {
-			console.log(e.target);
 			removeActiveClass(navButtons);
 			e.target.classList.add("active");
 		});
@@ -40,7 +39,6 @@ export function changeActiveView() {
 
 	function removeActiveClass(elements) {
 		elements.forEach((e) => {
-			console.log(e.target);
 			e.classList.remove("active");
 		});
 	}

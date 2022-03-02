@@ -11,20 +11,6 @@ main {
 	align-items: center;
 }
 
-.product-view-list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1rem;
-	flex-wrap: 1;
-}
-
-.product-view-list .product {
-	flex: 1;
-	width: 80%;
-	flex-wrap: 1;
-}
-
 /* Individual products */
 .product {
 	display: flex;
@@ -71,7 +57,7 @@ main {
 }
 
 .product-name {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 .product-price {
 	font-size: 0.9rem;

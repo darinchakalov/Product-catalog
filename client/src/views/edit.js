@@ -1,7 +1,7 @@
 import { html, render } from "../../node_modules/lit-html/lit-html.js";
 import productServices from "../services/productServices.js";
 import page from "../../node_modules/page/page.mjs";
-import { createNotification } from "../services/clientSideServices.js";
+import { createNotification } from "../services/utils.js";
 
 const rootElement = document.querySelector(".root");
 
@@ -34,6 +34,7 @@ export async function renderEditPage(context) {
 		}
 		try {
 			await productServices.editProduct(context.params.id, productData);
+			createNotification("Product succesfully edited", "success");
 			page.redirect("/");
 		} catch (error) {
 			createNotification(error, "alert");

@@ -1,5 +1,5 @@
 import { html, render } from "../../node_modules/lit-html/lit-html.js";
-import { createNotification } from "../services/clientSideServices.js";
+import { createNotification } from "../services/utils.js";
 import { checkPermissions } from "../services/permissionService.js";
 import dataServices from "../services/productServices.js";
 import { productTemplate } from "./partials/product.js";

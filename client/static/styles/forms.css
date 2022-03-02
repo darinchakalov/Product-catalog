@@ -27,6 +27,7 @@
 
 .form-container form label {
 	align-self: center;
+	color: rgb(184, 183, 194);
 }
 
 .form-container form button {

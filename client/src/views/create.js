@@ -1,7 +1,7 @@
 import { html, render } from "../../node_modules/lit-html/lit-html.js";
 import productServices from "../services/productServices.js";
 import page from "../../node_modules/page/page.mjs";
-import { createNotification } from "../services/clientSideServices.js";
+import { createNotification } from "../services/utils.js";
 import { checkPermissions } from "../services/permissionService.js";
 
 const rootElement = document.querySelector(".root");
@@ -27,7 +27,8 @@ export async function renderCreatePage() {
 			return createNotification("All fields are mandatory", "info");
 		}
 		try {
-			await productServices.createProduct(productData);
+			let responce = await productServices.createProduct(productData);
+			console.log(responce);
 			page.redirect("/");
 			createNotification("Product succesfully created", "success");
 		} catch (error) {

@@ -1,5 +1,6 @@
 header {
 	display: flex;
+	align-items: center;
 }
 
 /* Logo */
@@ -7,12 +8,12 @@ header div {
 	background: rgb(196, 144, 237);
 	background: linear-gradient(87deg, rgba(196, 144, 237, 1) 0%, rgba(105, 160, 224, 1) 100%);
 	border-radius: 50%;
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 30px;
+	width: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0.2rem 1rem;
+	margin: 0.25rem 1rem;
 }
 
 /* Logo text */
