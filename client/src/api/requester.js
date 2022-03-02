@@ -29,7 +29,7 @@ function createOptions(method = "GET", data) {
 }
 
 export async function get(url) {
-	return await request(url, createOptions());
+	return await request(url, createOptions("GET"));
 }
 
 export async function post(url, data) {

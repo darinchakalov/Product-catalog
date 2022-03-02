@@ -1,6 +1,6 @@
-const productServices = require("../services/productServices.js");
-
 const router = require("express").Router();
+
+const productServices = require("../services/productServices.js");
 
 const getProducts = (req, res) => {
 	productServices
@@ -15,7 +15,6 @@ const getProducts = (req, res) => {
 
 const createProduct = (req, res) => {
 	let productData = req.body;
-	console.log("here ", productData);
 	productServices
 		.create(productData)
 		.then((response) => {
@@ -51,6 +50,7 @@ const editProduct = (req, res) => {
 			res.status(500).json({ message: err });
 		});
 };
+
 
 router.get("/data/products", getProducts);
 router.post("/data/products", createProduct);
