@@ -24,12 +24,12 @@ export async function renderCreatePage() {
 		event.preventDefault();
 		let productData = Object.fromEntries(new FormData(event.target));
 		if (!productData.name || !productData.price || !productData.currency) {
-			return alert("All fields are mandatory");
+			return createNotification("All fields are mandatory", "info");
 		}
 		try {
 			await productServices.createProduct(productData);
 			page.redirect("/");
-			createNotification("Product was created succesfully", "success");
+			createNotification("Product succesfully created", "success");
 		} catch (error) {
 			createNotification("Something went wrong, unable to create product", "alert");
 		}

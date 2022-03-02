@@ -1,6 +1,7 @@
 import { html, render } from "../../node_modules/lit-html/lit-html.js";
 import productServices from "../services/productServices.js";
 import page from "../../node_modules/page/page.mjs";
+import { createNotification } from "../services/clientSideServices.js";
 
 const rootElement = document.querySelector(".root");
 
@@ -22,20 +23,20 @@ export async function renderEditPage(context) {
 		let currentProduct = await productServices.getSingleProduct(context.params.id);
 		render(editTemplate(onSubmit, currentProduct), rootElement);
 	} catch (error) {
-		alert(error);
+		createNotification(error, "alert");
 	}
 
 	async function onSubmit(event) {
 		event.preventDefault();
 		let productData = Object.fromEntries(new FormData(event.target));
 		if (!productData.name || !productData.price || !productData.currency) {
-			return alert("All fields are mandatory");
+			return createNotification("All fields are mandatory", "info");
 		}
 		try {
 			await productServices.editProduct(context.params.id, productData);
 			page.redirect("/");
 		} catch (error) {
-			alert(error);
+			createNotification(error, "alert");
 		}
 	}
 }
