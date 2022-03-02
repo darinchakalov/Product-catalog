@@ -10,13 +10,15 @@ export const productTemplate = (product, hasPermissons) => html`<div class="prod
 	<div class="info-wrapper">
 		<div class="product-info">
 			<p class="product-name">${product.name}</p>
-			<p class="product-price">${product.price} ${product.currency}</p>
+			<p class="product-price">Price: ${product.price} ${product.currency}</p>
 		</div>
 		<div class="buttons-wrapper">
-			${hasPermissons.canEdit ? html`<a class="button edit" href=${`/edit/${product._id}`}>Edit</a>` : ""}
+			${hasPermissons.canEdit
+				? html`<a class="button edit" href=${`/edit/${product._id}`}><i class="fa-solid fa-pen"></i>Edit</a>`
+				: ""}
 			${hasPermissons.canDelete
 				? html`<a id=${product._id} @click=${onDelete} class="button delete" href="javascript:void(0)"
-						>Delete</a
+						><i class="fa-solid fa-trash-can"></i>Delete</a
 				  >`
 				: ""}
 		</div>

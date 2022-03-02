@@ -1,7 +1,5 @@
 import page from "../node_modules/page/page.mjs";
 
-import { changeView } from "./services/clientSideServices.js";
-
 import { renderCatalogPage } from "./views/catalog.js";
 import { renderCreatePage } from "./views/create.js";
 import { renderEditPage } from "./views/edit.js";
@@ -16,5 +14,3 @@ page("/edit/:id", renderEditPage);
 page("*", renderNotFoundPage);
 
 page.start();
-
-changeView();

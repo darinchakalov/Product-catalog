@@ -15,6 +15,36 @@
     "name": "Darin Chakalov",
     "price": 20,
     "currency": "BGN",
-    "_id": "02615b3a-4519-46e7-9411-64f1f9e4741f"
+    "_id": "0f2f419e-2266-4717-8ec9-355c6e96d0a3"
+  },
+  {
+    "name": "Darin Chakalov",
+    "price": 20,
+    "currency": "USD",
+    "_id": "a9efeebc-0f25-4837-9c73-bb0eafa30bbe"
+  },
+  {
+    "name": "Darin Chakalov",
+    "price": 20,
+    "currency": "BGN",
+    "_id": "4cecff78-4c3c-46ea-94f9-bf24db2c6f4a"
+  },
+  {
+    "name": "Test cat",
+    "price": 2000,
+    "currency": "EUR",
+    "_id": "4919d072-7d9d-4aa9-9c47-816371ad769a"
+  },
+  {
+    "name": "Fourth Cube",
+    "price": 30,
+    "currency": "EUR",
+    "_id": "1c71bc72-50b4-496a-b567-48f309111351"
+  },
+  {
+    "name": "New Cube",
+    "price": 18500,
+    "currency": "EUR",
+    "_id": "cfcd1334-2069-4454-9de2-9757eef917c1"
   }
 ]

@@ -3,15 +3,27 @@ header {
 }
 
 header div {
-	cursor: pointer;
-	flex-basis: 20%;
+	background: rgb(196, 144, 237);
+	background: linear-gradient(87deg, rgba(196, 144, 237, 1) 0%, rgba(105, 160, 224, 1) 100%);
+	border-radius: 50%;
+	height: 2.5rem;
+	width: 2.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 0.2rem 1rem;
 }
 
-header div i {
-	font-size: 1.5rem;
+header div a {
+	border-radius: 50%;
+	width: 85%;
+	height: 85%;
+	background-color: rgb(53, 57, 64);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	text-decoration: none;
 }
 
 header nav {
