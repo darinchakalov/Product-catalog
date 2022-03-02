@@ -2,6 +2,7 @@ main {
 	padding: 4rem 2rem;
 }
 
+/* Product section */
 .product-view-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 0.5fr));
@@ -24,6 +25,7 @@ main {
 	flex-wrap: 1;
 }
 
+/* Individual products */
 .product {
 	display: flex;
 	border-radius: 20px;
@@ -38,7 +40,8 @@ main {
 	transform: scale(1.02);
 }
 
-.image-container{
+/* Product image */
+.image-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -49,6 +52,7 @@ main {
 	border-radius: 20px;
 }
 
+/* Product details */
 .info-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -75,6 +79,7 @@ main {
 	color: #c9c8c8;
 }
 
+/* Product buttons */
 .buttons-wrapper {
 	display: flex;
 	justify-content: space-evenly;
@@ -105,4 +110,8 @@ main {
 	color: white;
 	background: rgb(196, 144, 237);
 	background: linear-gradient(87deg, rgba(196, 144, 237, 1) 0%, rgba(105, 160, 224, 1) 100%);
+}
+
+.button:hover > * {
+	color: white;
 }
