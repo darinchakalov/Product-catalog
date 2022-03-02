@@ -1,23 +1,11 @@
 export function createNotification(message, className) {
 	const notificationSection = document.querySelector(".notification");
 
-	let notificationDiv = document.createElement("div");
-	notificationDiv.classList.add("message-box");
-	notificationDiv.classList.add(className);
-
-	let notificationSpan = document.createElement("span");
-	notificationSpan.classList.add("closebtn");
-	notificationSpan.innerText = `close`;
+	let notificationDiv = createElelement("div", null, notificationSection, ["message-box", className]);
+	let notificationSpan = createElelement("span", "close", notificationDiv, ["closebtn"]);
+	let notificationP = createElelement("p", message, notificationDiv);
 
 	notificationSpan.addEventListener("click", closeNotification);
-
-	let notificationP = document.createElement("p");
-	notificationP.textContent = message;
-
-	notificationDiv.appendChild(notificationSpan);
-	notificationDiv.appendChild(notificationP);
-
-	notificationSection.appendChild(notificationDiv);
 }
 
 function closeNotification(e) {
@@ -26,6 +14,20 @@ function closeNotification(e) {
 	setTimeout(function () {
 		notification.remove();
 	}, 600);
+}
+
+function createElelement(type, content, parent, classNames) {
+	const element = document.createElement(type);
+	element.textContent = content;
+	if (parent) {
+		parent.appendChild(element);
+	}
+	if (classNames) {
+		classNames.forEach((className) => {
+			element.classList.add(className);
+		});
+	}
+	return element;
 }
 
 export function changeActiveView() {

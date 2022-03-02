@@ -1,4 +1,4 @@
-import { html, render } from "../../node_modules/lit-html/lit-html.js";
+import { html, render } from "../lib.js";
 const rootElement = document.querySelector(".root");
 
 const notFoundTemplate = () => html`<div class="display-instead">

@@ -1,6 +1,5 @@
-import { html } from "../../../node_modules/lit-html/lit-html.js";
+import { page, html } from "../../lib.js";
 import productServices from "../../services/productServices.js";
-import page from "../../../node_modules/page/page.mjs";
 import { createNotification } from "../../services/utils.js";
 
 export const productTemplate = (product, hasPermissons) => html`<div class="product">

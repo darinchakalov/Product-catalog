@@ -1,4 +1,4 @@
-import { html, render } from "../../node_modules/lit-html/lit-html.js";
+import { html, render } from "../lib.js";
 import { createNotification } from "../services/utils.js";
 import { checkPermissions } from "../services/permissionService.js";
 import dataServices from "../services/productServices.js";

@@ -1,4 +1,4 @@
-import page from "../node_modules/page/page.mjs";
+import { page } from "./lib.js";
 
 import { renderCatalogPage } from "./views/catalog.js";
 import { renderCreatePage } from "./views/create.js";
