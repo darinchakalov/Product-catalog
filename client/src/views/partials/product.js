@@ -1,6 +1,7 @@
 import { html } from "../../../node_modules/lit-html/lit-html.js";
 import productServices from "../../services/productServices.js";
 import page from "../../../node_modules/page/page.mjs";
+import { createNotification } from "../../services/clientSideServices.js";
 
 export const productTemplate = (product, hasPermissons) => html`<div class="product">
 	<div class="image-container">
@@ -28,8 +29,10 @@ async function onDelete(e) {
 		try {
 			await productServices.deleteProduct(e.target.id);
 			page.redirect("/");
+			createNotification("Product succesfully deleted", "success");
 		} catch (error) {
-			alert(error);
+			page.redirect("/");
+			createNotification("Something went wrong, unable to delete product", "error");
 		}
 	}
 }

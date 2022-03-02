@@ -5,12 +5,11 @@ async function request(uri, options) {
 		const response = await fetch(host + uri, options);
 		if (response.ok !== true) {
 			const error = await response.json();
-			throw new Error(error.message);
+			return error;
 		}
 		return response.json();
 	} catch (error) {
-		alert(error.message);
-		throw error;
+		return error;
 	}
 }
 
