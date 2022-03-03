@@ -31,7 +31,7 @@
   },
   {
     "name": "Mouse",
-    "price": 50,
+    "price": "55",
     "currency": "USD",
     "_id": "7c2336a2-457e-4fb2-b523-430bb468fe59"
   },

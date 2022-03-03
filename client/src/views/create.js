@@ -11,9 +11,12 @@ const createTemplate = (onSubmit, canCreate) =>
 		? html`<div class="form-container">
 				<h2>Create new product</h2>
 				<form @submit=${onSubmit}>
-					<input type="text" name="name" placeholder="Product name" />
-					<input type="number" name="price" placeholder="Price" />
-					<input type="text" name="currency" placeholder="Currency ('Eg USD')" />
+					<label for="name">Product name</label>
+					<input type="text" name="name" placeholder="e.g. Table" />
+					<label for="price">Price</label>
+					<input type="number" name="price" placeholder="e.g. 300" />
+					<label for="currency">Currency</label>
+					<input type="text" name="currency" placeholder="e.g. USD" />
 					<button class="button" type="submit">Create</button>
 				</form>
 		  </div>`
