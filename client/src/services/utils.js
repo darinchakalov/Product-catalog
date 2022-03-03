@@ -1,3 +1,5 @@
+// Creating a notification div and attaching a message and CSS class depending on the type of message
+
 export function createNotification(message, className) {
 	const notificationSection = document.querySelector(".notification");
 
@@ -16,6 +18,8 @@ function closeNotification(e) {
 	}, 600);
 }
 
+// Function to create element, set text content, CSS class and append it to a parent element
+
 function createElelement(type, content, parent, classNames) {
 	const element = document.createElement(type);
 	element.textContent = content;
@@ -30,6 +34,7 @@ function createElelement(type, content, parent, classNames) {
 	return element;
 }
 
+// Gets all buttons in the nav and uppon click removes the "active" CSS class and adds that class only to the click button
 export function changeActiveView() {
 	let navButtons = document.querySelectorAll("nav ul li a");
 	navButtons.forEach((btn) => {

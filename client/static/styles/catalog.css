@@ -91,6 +91,10 @@ main {
 	color: black;
 }
 
+.button {
+	font-size: 1em;
+}
+
 .button:hover {
 	color: white;
 	background: rgb(196, 144, 237);

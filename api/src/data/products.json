@@ -1,50 +1,44 @@
 [
   {
-    "name": "Test cat",
-    "price": 2000,
-    "currency": "EUR",
-    "_id": "4919d072-7d9d-4aa9-9c47-816371ad769a"
-  },
-  {
-    "name": "Fourth Cube",
-    "price": 30,
-    "currency": "EUR",
-    "_id": "1c71bc72-50b4-496a-b567-48f309111351"
-  },
-  {
-    "name": "Darin Chakalov",
-    "price": "201",
+    "name": "TV",
+    "price": 1000,
     "currency": "USD",
-    "_id": "a9efeebc-0f25-4837-9c73-bb0eafa30bbe"
+    "_id": "7e40b197-730f-42b6-b531-79be48ca6a98"
   },
   {
-    "name": "New Cube",
-    "price": "1850",
-    "currency": "EUR",
-    "_id": "cfcd1334-2069-4454-9de2-9757eef917c1"
-  },
-  {
-    "name": "Darin Chakalov",
-    "price": "201",
-    "currency": "BGN",
-    "_id": "4cecff78-4c3c-46ea-94f9-bf24db2c6f4a"
+    "name": "TV Stand",
+    "price": 50,
+    "currency": "USD",
+    "_id": "b34fc36b-3211-4cbd-9589-1b6dde9ccae5"
   },
   {
     "name": "Desk",
-    "price": 220,
-    "currency": "BGN",
-    "_id": "1abbf50c-ecc0-47a1-b01c-efa737b23275"
+    "price": 300,
+    "currency": "EUR",
+    "_id": "351c3118-c536-483a-831d-b8f6322ebf21"
   },
   {
-    "name": "Darin Chakalov",
-    "price": 20,
+    "name": "Office Chair",
+    "price": 300,
     "currency": "BGN",
-    "_id": "831c2c41-d15d-4a16-84f7-69b5eaf68210"
+    "_id": "b1dd2029-0470-4a38-90ca-56c7a338e975"
   },
   {
-    "name": "Darin Chakalov",
-    "price": "202",
-    "currency": "BGN",
-    "_id": "0f2f419e-2266-4717-8ec9-355c6e96d0a3"
+    "name": "Laptop",
+    "price": 1500,
+    "currency": "EUR",
+    "_id": "e96075b9-6450-401b-be82-7415b52d4cbf"
+  },
+  {
+    "name": "Mouse",
+    "price": 50,
+    "currency": "USD",
+    "_id": "7c2336a2-457e-4fb2-b523-430bb468fe59"
+  },
+  {
+    "name": "Keyboard",
+    "price": "90",
+    "currency": "USD",
+    "_id": "7cd202f6-a240-4996-bc5a-5519b688ddc5"
   }
 ]

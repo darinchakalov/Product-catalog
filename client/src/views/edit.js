@@ -28,6 +28,7 @@ export async function renderEditPage(context) {
 	async function onSubmit(event) {
 		event.preventDefault();
 		let productData = Object.fromEntries(new FormData(event.target));
+		// Verifying if all fields are populated 
 		if (!productData.name || !productData.price || !productData.currency) {
 			return createNotification("All fields are mandatory", "info");
 		}

@@ -12,6 +12,7 @@ export const productTemplate = (product, hasPermissons) => html`<div class="prod
 			<p class="product-price">Price: ${product.price} ${product.currency}</p>
 		</div>
 		<div class="buttons-wrapper">
+			<!-- If the permissions exist on the API array button will be shown otherwise we render nothing -->
 			${hasPermissons.canEdit
 				? html`<a class="button edit" href=${`/edit/${product._id}`}><i class="fa-solid fa-pen"></i>Edit</a>`
 				: ""}

@@ -1,5 +1,6 @@
 const host = "http://localhost:3030";
 
+// Attaching the host URL to the URI
 async function request(uri, options) {
 	try {
 		const response = await fetch(host + uri, options);
@@ -13,6 +14,7 @@ async function request(uri, options) {
 	}
 }
 
+// Setting HTTP method and headers
 function createOptions(method = "GET", data) {
 	const options = {
 		method,

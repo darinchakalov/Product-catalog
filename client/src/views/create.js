@@ -6,6 +6,7 @@ import { checkPermissions } from "../services/permissionService.js";
 const rootElement = document.querySelector(".root");
 
 const createTemplate = (onSubmit, canCreate) =>
+	// Checking of CREATE permissions exist on the API, if not a message is rendered instead of the create form
 	html` ${canCreate
 		? html`<div class="form-container">
 				<h2>Create new product</h2>
@@ -22,12 +23,12 @@ export async function renderCreatePage() {
 	async function onSubmit(event) {
 		event.preventDefault();
 		let productData = Object.fromEntries(new FormData(event.target));
+		// Verifying if all fields are populated
 		if (!productData.name || !productData.price || !productData.currency) {
 			return createNotification("All fields are mandatory", "info");
 		}
 		try {
-			let responce = await productServices.createProduct(productData);
-			console.log(responce);
+			await productServices.createProduct(productData);
 			page.redirect("/");
 			createNotification("Product succesfully created", "success");
 		} catch (error) {

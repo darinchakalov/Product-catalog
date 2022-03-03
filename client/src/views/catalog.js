@@ -10,6 +10,8 @@ export const catalogTemplate = (products, hasPermissons) => html` <div
 	id="products-container"
 	class="product-view-grid"
 >
+	<!-- First, there is check if read permissions are allowed from the API -->
+	<!-- If READ permissions exist, then each prodcut is mapped to the productTemplate-->
 	${hasPermissons.canRead
 		? html`${products.map((p) => productTemplate(p, hasPermissons))}`
 		: html`<div class="display-instead"><h2>Permissions denied: no read permissions</h2></div>`}
@@ -18,7 +20,9 @@ export const catalogTemplate = (products, hasPermissons) => html` <div
 export async function renderCatalogPage(context) {
 	try {
 		let products = await dataServices.getAllProducts();
+		// Fetching the permissions array from the API
 		let permissions = await checkPermissions();
+		// Object which check if specific action is allowed
 		let hasPermissons = {
 			canDelete: permissions.includes("DELETE"),
 			canEdit: permissions.includes("UPDATE"),
