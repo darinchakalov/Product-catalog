@@ -17,11 +17,11 @@ export const catalogTemplate = (products, hasPermissons) => html` <div
 		: html`<div class="display-instead"><h2>Permissions denied: no read permissions</h2></div>`}
 </div>`;
 
-export async function renderCatalogPage(context) {
+export async function renderCatalogPage() {
 	try {
-		let products = await dataServices.getAllProducts();
-		// Fetching the permissions array from the API
-		let permissions = await checkPermissions();
+		// Fetching the prodcuts and the permissions array from the API
+		let [products, permissions] = await Promise.all([dataServices.getAllProducts(), checkPermissions()]);
+
 		// Object which check if specific action is allowed
 		let hasPermissons = {
 			canDelete: permissions.includes("DELETE"),

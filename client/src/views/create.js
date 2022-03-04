@@ -23,6 +23,14 @@ const createTemplate = (onSubmit, canCreate) =>
 		: html`<div class="display-instead"><h2>Permissions denied: no update permissions</h2></div>`}`;
 
 export async function renderCreatePage() {
+	try {
+		let permissions = await checkPermissions();
+		let canCreate = permissions.includes("CREATE");
+		render(createTemplate(onSubmit, canCreate), rootElement);
+	} catch (error) {
+		createNotification(error, "alert");
+	}
+
 	async function onSubmit(event) {
 		event.preventDefault();
 		let productData = Object.fromEntries(new FormData(event.target));
@@ -31,18 +39,12 @@ export async function renderCreatePage() {
 			return createNotification("All fields are mandatory", "info");
 		}
 		try {
+			// On successful product creation redirect to the home page
 			await productServices.createProduct(productData);
 			page.redirect("/");
 			createNotification("Product succesfully created", "success");
 		} catch (error) {
 			createNotification("Something went wrong, unable to create product", "alert");
 		}
-	}
-	try {
-		let permissions = await checkPermissions();
-		let canCreate = permissions.includes("CREATE");
-		render(createTemplate(onSubmit, canCreate), rootElement);
-	} catch (error) {
-		createNotification(error, "alert");
 	}
 }

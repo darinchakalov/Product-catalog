@@ -4,7 +4,7 @@ import { createNotification } from "../../services/utils.js";
 
 export const productTemplate = (product, hasPermissons) => html`<div class="product">
 	<div class="image-container">
-		<img src="./static/images/photo-1523275335684-37898b6baf30.jfif" alt="" />
+		<img src="./static/images/product-image.jfif" alt="product image" />
 	</div>
 	<div class="info-wrapper">
 		<div class="product-info">

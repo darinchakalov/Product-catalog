@@ -40,5 +40,11 @@
     "price": "90",
     "currency": "USD",
     "_id": "7cd202f6-a240-4996-bc5a-5519b688ddc5"
+  },
+  {
+    "name": "Monitor",
+    "price": 450,
+    "currency": "EUR",
+    "_id": "2252f00e-8d15-454a-a9ad-05a9a00b2417"
   }
 ]
