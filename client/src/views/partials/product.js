@@ -29,6 +29,7 @@ async function onDelete(e) {
 	const confirmed = confirm("Are you sure you want to delete this item?");
 	if (confirmed) {
 		try {
+			// On user confirmation delete the product and render the home page
 			await productServices.deleteProduct(e.target.id);
 			page.redirect("/");
 			createNotification("Product succesfully deleted", "success");
