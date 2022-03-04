@@ -3,7 +3,6 @@
 .form-container {
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	gap: 1rem;
 }
 
@@ -34,5 +33,4 @@
 	text-align: center;
 	align-self: center;
 	padding: 1em 5em;
-	/* max-width: 30%; */
 }
