@@ -10,11 +10,16 @@ export const catalogTemplate = (products, hasPermissons) => html` <div
 	id="products-container"
 	class="product-view-grid"
 >
-	<!-- First, there is check if read permissions are allowed from the API -->
-	<!-- If READ permissions exist, then each prodcut is mapped to the productTemplate-->
-	${hasPermissons.canRead
-		? html`${products.map((p) => productTemplate(p, hasPermissons))}`
-		: html`<div class="display-instead"><h2>Permissions denied: no read permissions</h2></div>`}
+	<!-- Check if there are products in the catalog -->
+	${products.length > 0
+		? //First, there is check if read permissions are allowed from the API
+		  // If READ permissions exist, then each prodcut is mapped to the productTemplate
+		  html`${hasPermissons.canRead
+				? html`${products.map((p) => productTemplate(p, hasPermissons))}`
+				: //If no READ permissions are present the following message is displayed
+				  html`<div class="display-instead"><h2>Permissions denied: no read permissions</h2></div>`}`
+		: // If there are no products the following message is displayed
+		  html`<div class="display-instead"><h2>There are no products in the catalog</h2></div>`}
 </div>`;
 
 export async function renderCatalogPage() {

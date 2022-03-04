@@ -1,50 +1,50 @@
 [
-  {
-    "name": "TV",
-    "price": 1000,
-    "currency": "USD",
-    "_id": "7e40b197-730f-42b6-b531-79be48ca6a98"
-  },
-  {
-    "name": "TV Stand",
-    "price": 50,
-    "currency": "USD",
-    "_id": "b34fc36b-3211-4cbd-9589-1b6dde9ccae5"
-  },
-  {
-    "name": "Desk",
-    "price": 300,
-    "currency": "EUR",
-    "_id": "351c3118-c536-483a-831d-b8f6322ebf21"
-  },
-  {
-    "name": "Office Chair",
-    "price": 300,
-    "currency": "BGN",
-    "_id": "b1dd2029-0470-4a38-90ca-56c7a338e975"
-  },
-  {
-    "name": "Laptop",
-    "price": 1500,
-    "currency": "EUR",
-    "_id": "e96075b9-6450-401b-be82-7415b52d4cbf"
-  },
-  {
-    "name": "Mouse",
-    "price": "55",
-    "currency": "USD",
-    "_id": "7c2336a2-457e-4fb2-b523-430bb468fe59"
-  },
-  {
-    "name": "Keyboard",
-    "price": "90",
-    "currency": "USD",
-    "_id": "7cd202f6-a240-4996-bc5a-5519b688ddc5"
-  },
-  {
-    "name": "Monitor",
-    "price": 450,
-    "currency": "EUR",
-    "_id": "2252f00e-8d15-454a-a9ad-05a9a00b2417"
-  }
+	{
+		"name": "TV",
+		"price": 1000,
+		"currency": "USD",
+		"_id": "7e40b197-730f-42b6-b531-79be48ca6a98"
+	},
+	{
+		"name": "TV Stand",
+		"price": 50,
+		"currency": "USD",
+		"_id": "b34fc36b-3211-4cbd-9589-1b6dde9ccae5"
+	},
+	{
+		"name": "Desk",
+		"price": 300,
+		"currency": "EUR",
+		"_id": "351c3118-c536-483a-831d-b8f6322ebf21"
+	},
+	{
+		"name": "Office Chair",
+		"price": 300,
+		"currency": "BGN",
+		"_id": "b1dd2029-0470-4a38-90ca-56c7a338e975"
+	},
+	{
+		"name": "Laptop",
+		"price": 1500,
+		"currency": "EUR",
+		"_id": "e96075b9-6450-401b-be82-7415b52d4cbf"
+	},
+	{
+		"name": "Mouse",
+		"price": "55",
+		"currency": "USD",
+		"_id": "7c2336a2-457e-4fb2-b523-430bb468fe59"
+	},
+	{
+		"name": "Keyboard",
+		"price": "90",
+		"currency": "USD",
+		"_id": "7cd202f6-a240-4996-bc5a-5519b688ddc5"
+	},
+	{
+		"name": "Monitor",
+		"price": 450,
+		"currency": "EUR",
+		"_id": "2252f00e-8d15-454a-a9ad-05a9a00b2417"
+	}
 ]
